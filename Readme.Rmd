@@ -2,7 +2,7 @@
 title: "Readme"
 author: "Al Shain"
 date: "April 24, 2016"
-output: html_document
+output: pdf_document
 ---
 
 This is the readme file for the John Hopkins/Coursera Capstone Project.
