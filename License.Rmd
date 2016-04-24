@@ -1,0 +1,19 @@
+---
+title: "License File"
+author: "Al Shain"
+date: "April 24, 2016"
+output: pdf_document
+---
+
+This is the License file for the John Hopkins/Coursera Capstone Project.
+
+All CODE, DOCUMENTS, and SUPPORTING FILES are COPYRIGHTED BY 
+
+Al Shain, Founding Partner
+a Heuristic Solution, LLP
+Copyright 2016
+
+To contact me, please write me at:
+aheuristicsolution@gmail.com
+
+Thanks!
