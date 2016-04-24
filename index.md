@@ -60,9 +60,8 @@ An n-gram of size 1 is referred to as a "unigram"; size 2 is a "bigram" (or, les
 
 Now, try it out for yourself!
 
-<a target="_blank" href="http://alshain.shinyapps.io/PredictWord/">PredictNextWord - An Intuitive Shiny Application</a>
+<a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/"/a> PredictNextWord - An Intuitive Shiny Application 
 
-<a target="_blank" href="https://github.com/alshain/Data-Science/tree/master/Capstone%20Project/PredictWord"> Here's the source code</a>
 
 ### Thank you!
 

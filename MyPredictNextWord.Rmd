@@ -5,7 +5,7 @@ highlighter: highlight.js
 output:
   html_document:
     css: www/bootstrap.css
-    keep_md: yes
+    keep_md: no
 job: null
 knit: slidify::knit2slides
 mode: selfcontained
@@ -13,7 +13,15 @@ hitheme: tomorrow
 subtitle: John Hopkins, Capstone Project April 2016
 framework: io2012
 widgets: []
+
 ---
+
+```{r echo = FALSE, eval = FALSE}
+setwd('~/MyPredictNextWord/')
+library(shiny)
+library(shinyapps)
+library(slidify)
+```
 
 ## Predict the Next Word: A Somewhat Intuitive R App
 
@@ -60,7 +68,7 @@ An n-gram of size 1 is referred to as a "unigram"; size 2 is a "bigram" (or, les
 
 Now, try it out for yourself!
 
-<a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/"/a> PredictNextWord - An Intuitive Shiny Application 
+<a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/"> PredictNextWord - An Intuitive Shiny Application
 
 
 ### Thank you!

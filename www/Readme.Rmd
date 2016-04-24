@@ -1,0 +1,19 @@
+---
+title: "Readme"
+author: "Al Shain"
+date: "April 24, 2016"
+output: html_document
+---
+
+This is the readme file for the John Hopkins/Coursera Capstone Project.
+
+To contact me, please write me at:
+aheuristicsolution@gmail.com
+
+To fork a copy of this code, please grab a copy at:
+https://omg-allen.shinyapps.io/MyPredictNextWord/
+
+To run the published Shiny application, opent this URL in your browser:
+https://omg-allen.shinyapps.io/MyPredictNextWord/
+
+Thanks!

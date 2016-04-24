@@ -2,6 +2,6 @@ name: MyPredictNextWord
 account: omg-allen
 server: shinyapps.io
 appId: 97649
-bundleId: 432255
+bundleId: 432443
 url: https://omg-allen.shinyapps.io/MyPredictNextWord/
-when: 1461523659.34551
+when: 1461530209.39127

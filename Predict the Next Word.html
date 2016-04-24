@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file://localhost/Users/Al/MyPredictNextWord/MyPredictNextWord.html#1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Predict the Next Word</title>
+  
+  <meta name="description" content="Predict the Next Word">
+  <meta name="author" content="Al Shain">
+  <meta name="generator" content="slidify">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="./Predict the Next Word_files/default.css" media="all">
+  <link rel="stylesheet" href="./Predict the Next Word_files/phone.css" media="only screen and (max-device-width: 480px)">
+  <link rel="stylesheet" href="./Predict the Next Word_files/slidify.css">
+  <link rel="stylesheet" href="./Predict the Next Word_files/tomorrow.css">
+  <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="slides" src="./Predict the Next Word_files/slides.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="order" src="./Predict the Next Word_files/order.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="slide_config" src="./Predict the Next Word_files/slide_config.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="modernizr.custom.45394" src="./Predict the Next Word_files/modernizr.custom.45394.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="hammer" src="./Predict the Next Word_files/hammer.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="slide-controller" src="./Predict the Next Word_files/slide-controller.js"></script><script type="text/javascript" charset="utf-8" data-requirecontext="_" data-requiremodule="slide-deck" src="./Predict the Next Word_files/slide-deck.js"></script><!--<base target="_blank">--><base href="." target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel="stylesheet" href="./Predict the Next Word_files/ribbons.css">
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="./Predict the Next Word_files/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" src="./Predict the Next Word_files/require-1.0.8.min.js">
+  </script>
+  
+  
+
+<link rel="stylesheet" href="./Predict the Next Word_files/css"></head>
+<body style="opacity: 0" class="loaded">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground current" data-slide-num="1" data-total-slides="5">
+  <hgroup class="auto-fadein">
+    <h1>Predict the Next Word</h1>
+    <h2>John Hopkins, Capstone Project April 2016</h2>
+    <p>Al Shain<br></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="next" id="slide-1" style="background:;" data-slide-num="2" data-total-slides="5">
+  <hgroup>
+    <h2>Predict the Next Word: A Somewhat Intuitive R App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Introducing an interactive Shiny R application that can predict the next word based on the phrase/sentence/word you enter. 
+It's intuitive and easy to use. </p>
+
+<p>This Capstone project was based on the premise of next word predictions as modeled by the sofware company, SWIFTKEY.
+For more information on the John Hopkins, Coursera Data Science Capstone project please visit:</p>
+
+<p><a target="_blank" href="https://www.coursera.org/learn/data-science-project">Coursera</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="far-next" id="slide-2" style="background:;" data-slide-num="3" data-total-slides="5">
+  <hgroup>
+    <h2>How it works</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>If you have a phrase, sentence or word then this application can predict the succeeding word with the certain degree of probability.</p>
+
+<p>Here are the steps:</p>
+
+<ol>
+<li>The user enters the required phrase, sentence or word</li>
+<li>The application utilizes a series of algorithms to figure out which word may occur next</li>
+<li><p>The application outputs the results using four visual displays:</p>
+a. Redisplay of your phrase or sentence.<p></p>
+
+<p>b. The top ranked result appended to your phrase.</p>
+
+<p>c. A list of the bottom four predicted phrases.</p>
+
+<p>d. A Word or Tag Cloud of the possible words (based on the maximum number you have allowed)</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;" data-slide-num="4" data-total-slides="5">
+  <hgroup>
+    <h2>The Internal of the Applications</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>At the core, the application uses n-gram Markov model for prediction. An n-gram model is a type of probabilistic language model for predicting the next item in such a sequence in the form of a (n − 1)–order Markov model. You can read more about it here <a target="_blank" href="https://en.wikipedia.org/wiki/N-gram"> n-grams using Markov Models</a>. </p>
+
+<p>In the fields of computational linguistics and probability, an n-gram is a contiguous sequence of n items from a given sequence of text or speech. The items can be phonemes, syllables, letters, words or base pairs according to the application. The n-grams typically are collected from a text or speech corpus. When the items are words, n-grams may also be called shingles.[1]</p>
+
+<p>An n-gram of size 1 is referred to as a "unigram"; size 2 is a "bigram" (or, less commonly, a "digram"); size 3 is a "trigram". Larger sizes are sometimes referred to by the value of n, e.g., "four-gram", "five-gram", and so on.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;" data-slide-num="5" data-total-slides="5">
+  <hgroup>
+    <h2>How Do I Get my Hands on the Application?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Now, try it out for yourself!</p>
+
+<p><a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/"> PredictNextWord - An Intuitive Shiny Application</a></p><a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/">
+
+<h3>Thank you!</h3>
+
+  </a></article><a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/">
+  <!-- Presenter Notes -->
+</a></slide><a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/">
+
+    <slide class="backdrop"></slide>
+  </a></slides><a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/">
+  </a><div class="pagination pagination-small" id="io2012-ptoc" style="display:none;"><a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/">
+    </a><ul><a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/">
+      </a><li><a target="_blank" href="https://omg-allen.shinyapps.io/MyPredictNextWord/">
+      </a><a href="file://localhost/Users/Al/MyPredictNextWord/MyPredictNextWord.html#" target="_self" rel="tooltip" data-slide="1" title="Predict the Next Word: A Somewhat Intuitive R App">
+         1
+      </a>
+    </li>
+    <li>
+      <a href="file://localhost/Users/Al/MyPredictNextWord/MyPredictNextWord.html#" target="_self" rel="tooltip" data-slide="2" title="How it works">
+         2
+      </a>
+    </li>
+    <li>
+      <a href="file://localhost/Users/Al/MyPredictNextWord/MyPredictNextWord.html#" target="_self" rel="tooltip" data-slide="3" title="The Internal of the Applications">
+         3
+      </a>
+    </li>
+    <li>
+      <a href="file://localhost/Users/Al/MyPredictNextWord/MyPredictNextWord.html#" target="_self" rel="tooltip" data-slide="4" title="How Do I Get my Hands on the Application?">
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="./Predict the Next Word_files/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </body></html>
