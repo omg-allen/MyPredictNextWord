@@ -4,11 +4,11 @@ author: "Al Shain"
 highlighter: highlight.js
 output:
   html_document:
-    css: www/bootstrap.css
+    css: assets/css/bootstrap-theme.css
     keep_md: yes
 job: null
 knit: slidify::knit2slides
-mode: selfcontained
+mode: standalone
 hitheme: tomorrow
 subtitle: John Hopkins, Capstone Project April 2016
 framework: io2012
